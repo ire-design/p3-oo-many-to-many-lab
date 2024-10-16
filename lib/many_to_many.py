@@ -66,5 +66,5 @@ class Contract:
         # Filter contracts by the exact date (as a string)
         filtered_contracts = [contract for contract in cls.all_contracts if contract.date == date]
         
-        # Return contracts in the order they were created (which is insertion order)
+        # Return the filtered contracts in the order they were created (which is insertion order)
         return filtered_contracts
